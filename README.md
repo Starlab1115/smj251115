@@ -39,6 +39,6 @@ void colors(int a) {
     digitalWrite(4, 1);
   } else {
     digitalWrite(4, 0);
-```
     }
 } 
+```
