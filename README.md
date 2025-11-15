@@ -1,7 +1,7 @@
 # 으아아아아아아아아아아아아아아아아아아아아아아두이노(선민재)
 **버튼을 누르면 *LED*색깔이 무작위로 바뀝니다.**
 ![image](./image.jpeg)
-이 작품은단지 전구 하나와 버튼 한 개, 저항 한 개와 전선9개만 있으면 만들 수 있습니다.. 
+이 작품은단지 전구 하나와 버튼 한 개, 저항 한 개와 전선9개만 있으면 만들 수 있습니다.
 *코드* 
 ```
 void setup() {
@@ -15,12 +15,10 @@ void loop() {
   int a;
   int botton = digitalRead(8);
 
-  if (botton == 1) {
-    a = random(0, 7);
-    colors(a);
+  if (botton == 1) { // 버튼 누름 감지
+    a = random(0, 7); // 랜덤한 색 저장
+    colors(a); // 랜덤한 색 발광
   }
-  digitalWrite(10, 0);
-  delay(1000);
 }
 
 void colors(int a) {
