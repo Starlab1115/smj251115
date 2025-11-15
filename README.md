@@ -1,7 +1,7 @@
 # 으아아아아아아아아아아아아아아아아아아아아아아두이노(선민재)
 **버튼을 누르면 *LED*색깔이 무작위로 바뀝니다.**
 ![image](./image.jpeg)
-*코드*
+*코드* : 
 void setup() {
   pinMode(2, OUTPUT);
   pinMode(3, OUTPUT);
